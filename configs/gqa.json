@@ -1,7 +1,7 @@
 {
   "combine_datasets": ["gqa"],
   "combine_datasets_val": ["gqa"],
-  "vg_img_path": "",
-  "gqa_ann_path": "mdetr_annotations/",
+  "vg_img_path": "/home/CE/zhangshi/GLP/subset_images_test",
+  "gqa_ann_path": "/home/CE/zhangshi/GLP/OpenSource",
   "gqa_split_type": "balanced"
 }
