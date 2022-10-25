@@ -15,7 +15,7 @@ from typing import Dict
 os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
 import submitit
 
-import scripts.eval_gqa as detection
+from scripts import eval_gqa as detection
 
 
 def parse_args():
