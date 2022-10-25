@@ -91,7 +91,7 @@ class Trainer(object):
         os.environ["GLOO_SOCKET_IFNAME"] = socket_name
         os.environ["MDETR_CPU_REDUCE"] = "1"
 
-        import scripts.eval_gqa as detection
+        import blabla as detection
 
         self._setup_gpu_args()
         detection.main(self.args)
