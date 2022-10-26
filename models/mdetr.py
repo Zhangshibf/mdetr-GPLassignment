@@ -740,7 +740,7 @@ def build(args):
         aux_loss=args.aux_loss,
         contrastive_hdim=args.contrastive_loss_hdim,
         contrastive_loss=args.contrastive_loss,
-        contrastive_align_loss=args.contrastive_align_loss,
+        contrastive_align_loss=False,
         qa_dataset=qa_dataset,
         split_qa_heads=args.split_qa_heads,
         predict_final=args.predict_final,
