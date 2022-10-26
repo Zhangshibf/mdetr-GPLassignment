@@ -29,6 +29,9 @@ class GQAQuestionAnswering(torchvision.datasets.CocoDetection):
             self.answer2id_by_type = json.load(f)
         self.type2id = {"obj": 0, "attr": 1, "rel": 2, "global": 3, "cat": 4}
 
+    def __len__(self):
+        return 200
+
     def __getitem__(self, idx):
         img, target = super(GQAQuestionAnswering, self).__getitem__(idx)
         image_id = self.ids[idx]
